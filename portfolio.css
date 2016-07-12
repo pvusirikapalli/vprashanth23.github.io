@@ -1,0 +1,42 @@
+#logo{
+ width: 40px;
+ line-height: 40px;
+ border:1px thin grey;
+
+ float: left;
+}
+
+#logo:hover{
+box-shadow: 4px 4px 8px gray;
+}
+
+header {
+	width: 100%;
+	line-height: 45px;
+	background-color: #f1f1f1;
+	margin: 0;
+}
+
+#nav-menu{
+ float: right;
+ list-style-type: none;
+}
+li{
+float: right;
+}
+nav a{
+ padding: 15px;
+ width:80px;
+ height:45px;
+ text-decoration: none;
+ text-align: center;
+ color: black;
+}
+
+nav a:hover{
+	
+	color:white;
+	background-color: #800080;
+	cursor: pointer;
+	box-shadow: 4px 4px 8px gray;
+}
