@@ -1,25 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<meta name="author" content="Prashanth Vusirikapalli">
+<meta name="keywords" content="HTML,HTML5, CSS,CSS3,JavaScript,Bootstrap,Bootstrap 3,JSP,Servlets,JDBC,
+                               JPA,Hibernate,ORM,EJB,Spring,Spring MVC,JQuery,XML, XHTML,MySQL,DB2">
+<meta name="description" content="Portfoilo website to show skills and get challenging new oppurtunities">
 <title>Home | Portfolio</title>
 <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="css/portfolio.css">
 </head>
 <body>	
-		<!--Navbar Start-->
-		<nav>
-             <a  href="index.html">
-			    <img id="logo" alt="logo pic" src="images/logo.PNG">
-		    </a>			  
-			<ul>
-			  <li class="float-right"><a href="#"><b>CONTACT</b></a></li>
-			  <li class="float-right"><a href="#"><b>SKILLS</b></a></li>
-			  <li class="float-right"><a href="#"><b>ABOUT</b></a></li>
-			</ul>
-		</nav>
-		<!--Navbar End-->
+	<!--Navbar Start-->
+	<nav class="row">
+        <a class="col-2" href="index.html">
+		    <img id="logo" alt="logo pic" src="images/logo.PNG">
+			<img id="show-menu" alt="toogle" class="float-right"  onclick="showMenu()" src="images/toogle.PNG">
+	    </a>
+          			
+		<ul id="menu" class="col-10">
+		  <li class="float-right"><a href="contact.html"><b>CONTACT</b></a></li>
+		  <li class="float-right"><a href="skills.html"><b>SKILLS</b></a></li>
+		  <li class="float-right"><a href="about.html"><b>ABOUT</b></a></li>
+		</ul>
+		
+	</nav>
+	<!--Navbar End-->
+	
+	<script>
+        function showMenu(){
+	 document.getElementById("show-menu").style.display="none !important";
+	 document.getElementById("menu").style.display="block";
+	 }
+    </script>
 </body>
 </html>
