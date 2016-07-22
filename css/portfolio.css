@@ -97,8 +97,9 @@ li a:active{
     }
 	
 	li a:hover {
-    background-color: #f0f0f0;
+       background-color: #f0f0f0;
 	border-left:3px solid #800080 !important;
+	border-bottom:0px !important;
 	line-height:27px;
     }
 
