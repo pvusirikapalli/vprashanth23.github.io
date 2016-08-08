@@ -1,39 +1,239 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-<meta name="author" content="Prashanth Vusirikapalli">
-<meta name="keywords" content="HTML,HTML5, CSS,CSS3,JavaScript,Bootstrap,Bootstrap 3,JSP,Servlets,JDBC,
-                               JPA,Hibernate,ORM,EJB,Spring,Spring MVC,JQuery,XML, XHTML,MySQL,DB2">
-<meta name="description" content="Portfoilo website to show skills and get challenging new oppurtunities">
-<title>Home | Portfolio</title>
-<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-<link rel="icon" href="images/favicon.ico" type="image/x-icon">
-<link rel="stylesheet" href="css/portfolio.css">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Prashanth | Portfolio</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" >
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/portfolio.css" >
+	<script type="text/javascript" src="js/portfolio.js"></script>
 </head>
-<body>	
-	<!--Navbar Start-->
-	<nav class="row">
-        <a class="col-2" href="index.html">
-		    <img id="logo" alt="logo pic" src="images/logo.PNG">
-			<img id="show-menu" alt="toogle" class="float-right"  onclick="showMenu()" src="images/toogle.PNG">
-	    </a>
-          			
-		<ul id="menu" class="col-10">
-		  <li class="float-right"><a href="contact.html"><b>CONTACT</b></a></li>
-		  <li class="float-right"><a href="skills.html"><b>SKILLS</b></a></li>
-		  <li class="float-right"><a href="about.html"><b>ABOUT</b></a></li>
-		</ul>
-		
+<body data-spy="scroll" data-target="#nav" data-offset="50px">	
+	<!--Header start -->
+	<nav id="nav" class="navbar navbar-inverse navbar-fixed-top navbar-custom">
+		<div class="container">
+
+			<!-- Logo-->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle nav-toggle-trans" data-toggle="collapse" data-target="#navMenu">
+					<span class="icon-bar icon-bar-custom"></span>
+					<span class="icon-bar icon-bar-custom"></span>
+					<span class="icon-bar icon-bar-custom"></span>
+					<!-- <span><i class="fa fa-bars" aria-hidden="true"></i></span> -->
+				</button>
+				<a href="index.html" class="navbar-brand">
+					<span id="logo-name-short">PV</span>
+					<span id="logo-name">PRASHANTH VUSIRIKAPALLI</span>
+				</a>
+			</div>
+
+			<!-- Nav menu items-->
+			<div id="navMenu" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav navbar-right navbar-nav-custom">
+					<li ><a href="#about">About</a></li>
+					<li ><a href="#work">Work</a></li>
+					<li ><a href="#education">Education</a></li>
+					<li ><a href="#skills">Skills</a></li>
+					<li ><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
+		</div>
 	</nav>
-	<!--Navbar End-->
 	
-	<script>
-        function showMenu(){
-	 document.getElementById("show-menu").style.display="none !important";
-	 document.getElementById("menu").style.display="block";
-	 }
-    </script>
+	<!--Header End -->
+
+
+
+	<div id="about" class="jumbotron jumbotron-custom">
+		
+		<div class="row">
+			<div class="col-md-12">
+				<img id="profile-pic" src="images/profilepic.jpg" height="200px" width="200px"class="img-responsive center-block img-circle">
+				<h3 class="h1-center">Prashanth Vusirikapalli</h3>
+				<h4 class="h1-center">Java/J2EE full stack developer </h4>
+				<br/>
+			</div>
+		</div>
+
+		<div class="container">
+			<p id="about-p">Im a full stack Java developer,with hands on doing front and backend technologies living in Sacramento,CA.Right now im working as a java developer at State of California Franchise Tax Board.I have a Master degree in Computer Software Engineering from University of Houston-ClearLake.I love coding, learning and working on new technologies.Currently im getting trained on latest front frameworks like NodeJS,AngularJS .Im currently looking for new fulltime/contracting oppurntunies in java or/and front end development.</p>	
+		</div>
+		
+	</div>
+
+	<div id="work" class="jumbotron jumbotron-custom" >
+		<h2 class="h1-center">Experience</h2>
+		
+		<div class="container">
+			
+			<div class="row">
+				<div class="col-md-4">
+					<img src="images/FTB-logo.jpeg" height="110px" width="110px">
+				</div>
+				<div class="col-md-8">
+					<h3>Java/J2EE Developer</h3>
+					<h4>State of California Franchise Tax Board & Sanra Solutions Inc</h4>
+					<h4>February 2014 - present</h4>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	
+	<div id="education" class="jumbotron jumbotron-custom" >
+		<h2 class="h1-center">Education</h2>
+		
+		<div class="container">
+			<h3>Masters</h3>
+			<div class="row">
+				<div class="col-md-4 col-xs-4">
+					<img src="images/UHCL-logo-1.png" height="100px" width="100px">
+				</div>
+				<div class="col-md-8 col-xs-8">
+					<h4>University of Houston-Clear Lake</h4>
+					<h5>Computer Software Engineering</h5>
+					<h5>CPA : 3.6/4</h5>
+				</div>
+			</div>
+			<hr>
+		</div>
+
+		<div class="container">
+			<h3>Bachelors</h3>
+			<div class="row">
+				<div class="col-md-4 col-xs-4">
+					<img src="images/JNTUH-logo.jpg" height="100px" width="100px">
+				</div>
+				<div class="col-md-8 col-xs-8">
+					<h4>Jawaharlal Nehru Techonological University,Hyderabad</h4>
+					<h5>Computer Science and Engineering</h5>
+					<h5>CPA : 3.5/4</h5>
+				</div>
+			</div>		
+		</div>
+		
+	</div>
+
+
+	<div id="skills" class="jumbotron jumbotron-custom">
+		<h2 class="h1-center">Skills</h2>
+
+		<div class="container">
+
+			<button type="button" class="btn btn-primary btn-custom">Java</button>
+			
+			<button type="button" class="btn btn-primary btn-custom">J2EE</button>
+
+			<button type="button" class="btn btn-primary btn-custom">JavaScript</button>
+
+			<button type="button" class="btn btn-primary btn-custom">SQL</button>
+
+			<button type="button" class="btn btn-primary btn-custom">JSP</button>
+
+			<button type="button" class="btn btn-primary btn-custom">XML</button>
+
+			<button type="button" class="btn btn-primary btn-custom">Eclipse</button>
+
+			<button type="button" class="btn btn-primary btn-custom">Hibernate</button>
+
+			<button type="button" class="btn btn-primary btn-custom">MySql</button>
+
+			<button type="button" class="btn btn-primary btn-custom">Servlets</button>
+
+			<button type="button" class="btn btn-primary btn-custom">DB2</button>
+
+			<button type="button" class="btn btn-primary btn-custom">PostgreSQL</button>
+
+			<button type="button" class="btn btn-primary btn-custom">SoapUi</button>
+
+			<button type="button" class="btn btn-primary btn-custom">OpenJPA</button>
+
+			<button type="button" class="btn btn-primary btn-custom">EJB</button>
+
+			<button type="button" class="btn btn-primary btn-custom">JDBC</button>
+
+			<button type="button" class="btn btn-primary btn-custom">HTML</button>
+
+			<button type="button" class="btn btn-primary btn-custom">HTML5</button>
+
+			<button type="button" class="btn btn-primary btn-custom">IBM RAD</button>
+
+			<button type="button" class="btn btn-primary btn-custom">Spring MVC</button>
+
+			<button type="button" class="btn btn-primary btn-custom">RESTful webservices</button>
+
+			<button type="button" class="btn btn-primary btn-custom">Git/GitHub</button>
+
+			<button type="button" class="btn btn-primary btn-custom">CSS</button>
+			
+			<button type="button" class="btn btn-primary btn-custom">CSS3</button>
+			
+			<button type="button" class="btn btn-primary btn-custom">JQuery</button>
+
+			<button type="button" class="btn btn-primary btn-custom">Objective-C</button>
+
+			<button type="button" class="btn btn-primary btn-custom">SOAP webservices</button>
+
+			<button type="button" class="btn btn-primary btn-custom">Bootstrap</button>
+
+			<button type="button" class="btn btn-primary btn-custom">LESS Js</button>
+
+			<button type="button" class="btn btn-primary btn-custom">Amazon S3</button>
+
+			<button type="button" class="btn btn-primary btn-custom">IBM RAD</button>
+
+			<button type="button" class="btn btn-primary btn-custom">Spring MVC</button>
+
+			<button type="button" class="btn btn-primary btn-custom">RESTful webservices</button>
+
+			<button type="button" class="btn btn-primary btn-custom">Git/GitHub</button>
+
+			<button type="button" class="btn btn-primary btn-custom">CSS</button>
+
+			<button type="button" class="btn btn-primary btn-custom">CSS3</button>
+
+		</div>
+
+	</div>
+	
+	<div id="contact" class="jumbotron jumbotron-custom">
+		<h2 class="h1-center">Contact</h2>
+
+		<div class="container">
+			<h3 class="h1-center"><i class="fa fa-envelope" aria-hidden="true"></i> Mail:</h3>
+			<h3 class="h1-center">vprashanth23@hotmail.com</h3>
+			<br/>
+			<h3 class="h1-center"><i class="fa fa-mobile" aria-hidden="true"></i> Mobile:</h3>
+			<h3 class="h1-center">304-777-7154</h3>
+		</div>
+		
+	</div>
+
+	<footer class="footer">
+		
+		<h6 class="footer-text">Copyright © Prashanth Vusirikapalli</h6>
+		<p class="h1-center">
+
+			<a href="https://www.facebook.com/vprashanth23" target="_Blank">
+				<i class="fa fa-facebook-official fa-custom" aria-hidden="true"></i>
+			</a>
+
+			<a href="https://github.com/vprashanth23" target="_Blank">
+				<i class="fa fa-github fa-custom" aria-hidden="true"></i>
+			</a>
+
+			<a href="https://www.linkedin.com/in/prashanth-vusirikapalli" target="_Blank">
+				<i class="fa fa-linkedin-square fa-custom" aria-hidden="true"></i>
+			</a>
+		</p>
+		
+	</footer>
+
 </body>
 </html>
