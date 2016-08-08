@@ -1,147 +1,137 @@
-*{
-  box-sizing:border-box;
+/*@font-face {
+    font-family: AlexBrush;
+    src: url("fonts/AlexBrush-Regular.ttf");
+}
+*/
+body { 
+	position: relative;
 }
 
-html,body{
-   margin:0;
-   padding:0;
-}
-
-nav{
-	width:100%;
-	line-height:30px;
-	background-color:#f2f2f2;
-	position:static;
-}
-
-#logo{
-	width:63px;
-	float:left;
-	border:3px solid #f0f0f0;
-	height:inherit;
-}
-
-#logo:hover{
-    box-shadow: 0px 0px 4px gray;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #f2f2f2;
-}
-
-nav ul li{
-    width:120px;
-	display:inline-block;
+.navbar-custom{
+	border-radius: 0;
+	background-color: #272B35;
 
 }
 
-li a {
-    display: block;
-    color: #800080;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
-	width:inherit;
+.navbar-nav-custom > li > a:hover{
+	border-bottom: 3px solid #FFA500;
+	padding-bottom: 12px;
+	color: #FFA500 !important;
 }
 
-li a:hover {
-    background-color: #f0f0f0;
-	border-bottom:3px solid #800080;
-	line-height:27px;
+.navbar-nav-custom > li >a {
+	padding: 15px 35px;
+	/*border-right: 0.5px solid #FFA500;*/
+	font-weight: bold;
 }
 
-li a:active{
-    background-color: #800080;
-    color:white;
+#logo-name-short{
+	/*commented the title after logo*/
+	display: none;
+	font-weight: bold;
 }
 
-.float-left{
-	float:left;
+#logo-img:hover{
+	box-shadow: 2px 2px 8px #777;
 }
 
-.float-right{
-	float:right;
+.jumbotron-custom{
+	background-color: #E7E7E7 !important;
+	padding-top: 55px !important;
+	margin-bottom: 10px !important;
+
 }
 
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-
-@media screen and (max-width: 400px) {
-    
-	[class*="col-"] {
-        width: 100%;
-    }
-	
-	nav ul {
-   
-	display:none;
-    }
-  
-    nav ul li{
-    width:inherit;
-	display:block;
-    }
-	
-	li a:hover {
-       background-color: #f0f0f0;
-	border-left:3px solid #800080 !important;
-	border-bottom:0px !important;
-	line-height:27px;
-    }
-
-    #show-menu{
-	display: block !important;
-     margin-right: 2px;
-     margin-top: 8px;
-	}
-	
-	#show-menu:hover{
-    box-shadow: 0px 0px 4px gray;
-	
+#profile-pic{
+	/*box-shadow: 8px 8px 16px 16px white;*/
 }
-  }
 
-	
-	#show-menu{
-	 display:none;
+.div-spy-padding{
+	padding-top: 50px !important; 
+}
+
+.h1-center{
+	text-align: center;
+}
+
+#about-p{
+	text-align:text-justify;
+}
+
+.gray-bg-color{
+	background-color: #E7E7E7;
+}
+
+.thumbnail-custom {
+	margin-bottom: 0px !important;
+}
+
+.btn-custom{
+	margin-bottom: 5px;
+}
+
+.footer {
+	position: static;
+	bottom: 0;
+	width: 100%;
+	height: 80px;
+	border-radius: 0;
+	background-color: #272B35;
+	color: #9D9D9D; 
+}
+
+.footer-text{
+	text-align: center;
+	padding: 5px;
+	padding-top: 10px;
+}
+
+.fa-custom{
+   font-size: 30px;
+   margin-right: 5px;
+   text-align: center !important;
+}
+
+@media all and (max-width: 768px){
+
+	.navbar-nav-custom > li > a{
+		text-align: center;
 	}
 
+	.navbar-nav-custom > li > a:hover{
+		border-left: 3px solid #FFA500 !important;
+		border-bottom: 0;
+		padding-left: 32px;
+	}
+
+	#logo-name-short{
+		display: inline-block;
+		color: #9D9D9D;
+	}
+
+	#logo-name{
+		display: none;
+	}
+
+	.icon-bar-custom{
+		background-color: #9D9D9D !important;
+		
+	}
+
+	.nav-toggle-trans{
+		border-color: transparent !important;
+	}
+
+	.jumbotron-custom p{
+		font-size: 15px;
+	}
+
+	#profile-pic{
+		height: 100px !important;
+		width: 100px !important;
+
+	}
+
 }
 
-[class*="col-"]{
-   float:left;
 }
-
-.row::after {
-    content: "";
-    clear: both;
-    display: block;
-}
-
-
-.col-m-1 {width: 8.33%;}
-.col-m-2 {width: 16.66%;}
-.col-m-3 {width: 25%;}
-.col-m-4 {width: 33.33%;}
-.col-m-5 {width: 41.66%;}
-.col-m-6 {width: 50%;}
-.col-m-7 {width: 58.33%;}
-.col-m-8 {width: 66.66%;}
-.col-m-9 {width: 75%;}
-.col-m-10 {width: 83.33%;}
-.col-m-11 {width: 91.66%;}
-.col-m-12 {width: 100%;}
