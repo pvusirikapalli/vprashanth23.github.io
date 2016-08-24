@@ -107,6 +107,10 @@ body {
 	.navbar-nav-custom > li > a{
 		text-align: center;
 	}
+	
+	#about-p{
+		font-size: 16px;
+	}
 
 	.navbar-nav-custom > li > a:hover{
 		border-left: 3px solid #3BA5E1 !important;
